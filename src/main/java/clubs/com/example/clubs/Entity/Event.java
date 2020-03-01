@@ -15,7 +15,7 @@ public class Event {
 
     @Id
     @Column(nullable = false)
-    private String id;
+    private String eventId;
 
     @Column(nullable = false)
     private String name;

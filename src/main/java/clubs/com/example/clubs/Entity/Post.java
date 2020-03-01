@@ -15,7 +15,7 @@ public class Post {
 
     @Id
     @Column(nullable = false)
-    private String id;
+    private String postId;
 
     @Column(nullable = false)
     private String name;

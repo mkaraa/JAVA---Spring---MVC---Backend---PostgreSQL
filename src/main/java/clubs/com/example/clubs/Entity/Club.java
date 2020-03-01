@@ -5,6 +5,7 @@ import lombok.*;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.Transient;
 import java.util.Date;
 
 @Entity
@@ -25,4 +26,7 @@ public class Club {
 
     @Column
     private Date establishDate;
+
+    @Transient
+    private String managerName;
 }

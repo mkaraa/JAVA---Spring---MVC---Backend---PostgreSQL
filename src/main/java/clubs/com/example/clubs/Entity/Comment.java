@@ -14,7 +14,7 @@ public class Comment {
 
     @Id
     @Column(nullable = false)
-    private String id;
+    private String commentId;
 
     @Column(nullable = false)
     private String userId;

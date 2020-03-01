@@ -101,43 +101,6 @@ public class MainController {
         this.usersRepository = usersRepository;
     }
 
-    @RequestMapping("/user")
-    Collection<Users> user() {
-        return usersRepository.findAll();
-    }
-    
-    @ResponseBody
-    @GetMapping("/user/{userId}")
-    public String users(@RequestParam String userId){
-        return userId;
-    }
-
-    @PostMapping("/user")
-    Users newUser(@RequestBody Users newUser) {
-        return usersRepository.save(newUser);
-    }
-
-    @PutMapping("/user/{userId}")
-    Users replaceUser(@RequestBody Users newUser, @PathVariable String userId){
-        return usersRepository.findById(userId)
-                .map(users -> {
-                    users.setName(newUser.getName());
-                    users.setAge(newUser.getAge());
-                    users.setMajor(newUser.getMajor());
-                    users.setUniversityId(newUser.getUniversityId());
-                    return usersRepository.save(newUser);
-                })
-                .orElseGet(() -> {
-                    newUser.setId(userId);
-                    return usersRepository.save(newUser);
-                });
-    }
-
-    @DeleteMapping("/user/{userId}")
-    void deleteUser(@PathVariable String userId) {
-        usersRepository.deleteById(userId);
-    }
-
 }
 
 

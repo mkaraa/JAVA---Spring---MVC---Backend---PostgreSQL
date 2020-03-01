@@ -30,39 +30,4 @@ public class Users implements Serializable {
     @Column
     private String universityId;
 
-    public String getId() {
-        return id;
-    }
-
-    public void setId(String id) {
-        this.id = id;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public int getAge() {
-        return age;
-    }
-
-    public void setAge(int age) {
-        this.age = age;
-    }
-
-    public String getMajor() {
-        return major;
-    }
-
-    public void setMajor(String major) {
-        this.major = major;
-    }
-
-    public String getUniversityId() {
-        return universityId;
-    }
-
-    public void setUniversityId(String universityId) {
-        this.universityId = universityId;
-    }
 }
