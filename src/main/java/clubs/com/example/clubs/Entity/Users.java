@@ -1,9 +1,6 @@
 package clubs.com.example.clubs.Entity;
 
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -30,6 +27,42 @@ public class Users implements Serializable {
     @Column
     private String major;
 
-    @Column(nullable = false)
+    @Column
     private String universityId;
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    public String getMajor() {
+        return major;
+    }
+
+    public void setMajor(String major) {
+        this.major = major;
+    }
+
+    public String getUniversityId() {
+        return universityId;
+    }
+
+    public void setUniversityId(String universityId) {
+        this.universityId = universityId;
+    }
 }

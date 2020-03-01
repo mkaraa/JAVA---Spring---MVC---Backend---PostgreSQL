@@ -1,7 +1,6 @@
 package clubs.com.example.clubs.Entity;
 
-import lombok.Builder;
-import lombok.Data;
+import lombok.*;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -10,6 +9,8 @@ import javax.persistence.Id;
 @Builder
 @Entity
 @Data
+@NoArgsConstructor
+@AllArgsConstructor
 public class University {
 
     @Id
