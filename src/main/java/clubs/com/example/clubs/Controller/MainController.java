@@ -58,48 +58,7 @@ public class MainController {
     public void init(){
     }
 
-    public MainController(CategoryRepository categoryRepository){
-        this.categoryRepository = categoryRepository;
-    }
 
-    public MainController(ClubUserRepository clubUserRepository){
-        this.clubUserRepository = clubUserRepository;
-    }
-
-    public MainController(ClubRepository clubRepository) {
-        this.clubRepository = clubRepository;
-    }
-
-    public MainController(CommentRepository commentRepository) {
-        this.commentRepository = commentRepository;
-    }
-
-    public MainController(EventClubRepository eventClubRepository) {
-        this.eventClubRepository = eventClubRepository;
-    }
-
-    public MainController(EventRepository eventRepository) {
-        this.eventRepository = eventRepository;
-    }
-
-    public MainController(EventUserRepository eventUserRepository) {
-        this.eventUserRepository = eventUserRepository;
-    }
-
-    public MainController(PostRepository postRepository) {
-        this.postRepository = postRepository;
-    }
-
-    public MainController(UniversityClubRepository universityClubRepository){
-        this.universityClubRepository = universityClubRepository;
-    }
-
-    public MainController(UniversityRepository universityRepository) {
-        this.universityRepository = universityRepository;
-    }
-    public MainController(UsersRepository usersRepository) {
-        this.usersRepository = usersRepository;
-    }
 
 }
 
